@@ -10,6 +10,40 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Nature-themed color palette */
+  --color-primary-50: #f0fdf4;
+  --color-primary-100: #dcfce7;
+  --color-primary-200: #bbf7d0;
+  --color-primary-300: #86efac;
+  --color-primary-400: #4ade80;
+  --color-primary-500: #22c55e;
+  --color-primary-600: #16a34a;
+  --color-primary-700: #15803d;
+  --color-primary-800: #166534;
+  --color-primary-900: #14532d;
+  
+  --color-earth-50: #fef7ee;
+  --color-earth-100: #fdebd3;
+  --color-earth-200: #fbd3a5;
+  --color-earth-300: #f8b06d;
+  --color-earth-400: #f48333;
+  --color-earth-500: #f1610d;
+  --color-earth-600: #e24808;
+  --color-earth-700: #bb3209;
+  --color-earth-800: #95280f;
+  --color-earth-900: #7a2210;
+  
+  --color-field-50: #f7f8f3;
+  --color-field-100: #eef1e4;
+  --color-field-200: #dde4ca;
+  --color-field-300: #c4d1a6;
+  --color-field-400: #a7ba7f;
+  --color-field-500: #8ba05e;
+  --color-field-600: #6e8049;
+  --color-field-700: #55633a;
+  --color-field-800: #465031;
+  --color-field-900: #3b442a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +57,22 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom scrollbar for nature theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-field-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-500);
 }
